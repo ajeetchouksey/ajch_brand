@@ -1,0 +1,13 @@
+/*
+ * Aarya brand — typography tokens.
+ * Extracted from ajch_platform's index.html Google Fonts link + index.css
+ * body font-family declaration.
+ */
+:root {
+  --aarya-font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Google Fonts <link> tags still need adding to each vertical's index.html —
+   CSS @import of Google Fonts is blocked by most CSPs and is slower than a
+   preconnect+link. See docs/BRAND.md "Using this package" for the exact
+   <head> snippet. */

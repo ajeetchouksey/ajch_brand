@@ -1,0 +1,11 @@
+{
+  "name": "@aaryaai/brand",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Shared design tokens for the Aarya vertical family (ajch_platform, Spark, Compass, ...).",
+  "exports": {
+    "./tokens/*": "./tokens/*"
+  },
+  "files": ["tokens", "docs"]
+}

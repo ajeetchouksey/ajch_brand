@@ -1,0 +1,40 @@
+/*
+ * Aarya brand — color tokens.
+ * Extracted from ajch_platform's production src/index.css (the canonical,
+ * already-live brand) — not invented fresh. See docs/BRAND.md for the
+ * extension mechanism verticals use to theme without forking these values.
+ */
+:root {
+  /* Base surface */
+  --aarya-bg: #0e1a2d;
+
+  /* Primitive palette — one 500/400 pair per hue, matching
+     src/components/ui/GlassCard.tsx's ACCENT map and Badge.tsx's
+     BADGE_VARIANTS in ajch_platform exactly. */
+  --aarya-violet-600: #7c3aed;
+  --aarya-violet-400: #a78bfa;
+  --aarya-blue-700:   #1d4ed8;
+  --aarya-blue-400:   #60a5fa;
+  --aarya-sky-400:    #38bdf8;
+  --aarya-emerald-800:#065f46;
+  --aarya-emerald-400:#34d399;
+  --aarya-amber-800:  #92400e;
+  --aarya-amber-400:  #fbbf24;
+  --aarya-rose-800:   #9f1239;
+  --aarya-rose-400:   #fb7185;
+  --aarya-purple-900: #581c87;
+  --aarya-purple-400: #c084fc;
+  --aarya-slate-700:  #334155;
+  --aarya-slate-400:  #94a3b8;
+
+  /* Semantic — what most components should reach for first.
+     A vertical "extension" is: redeclare ONLY --aarya-accent /
+     --aarya-accent-2 (and optionally --aarya-bg) in the vertical's own
+     index.css, after this import. Never redeclare the primitive hues
+     above — that's the shared standard, not a per-vertical knob. */
+  --aarya-accent:   var(--aarya-violet-600);
+  --aarya-accent-2: var(--aarya-sky-400);
+
+  /* Brand gradient — used for heading-gradient, nav-progress, etc. */
+  --aarya-gradient: linear-gradient(135deg, var(--aarya-violet-400) 0%, var(--aarya-accent-2) 50%, var(--aarya-violet-400) 100%);
+}
